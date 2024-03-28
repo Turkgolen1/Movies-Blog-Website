@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Met Your Mother</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="ms-icon-70x70.png">
+<style>
+</style>
+<script>
+    var liked = false;
+    
+    var likeCount = 5;
+    var dislikeCount = 2;
+
+    function like() {
+        if (!liked) {
+            liked = true;
+            likeCount++;
+            document.getElementById("like-count").innerText = likeCount;
+        }
+    }
+
+    function dislike() {
+        if (!liked) {
+            liked = true;
+            dislikeCount++;
+            document.getElementById("dislike-count").innerText = dislikeCount;
+        }
+    }
+</script>
+
+</head>
+<body>
+<header>
+<h1>How I Met Your Mother 	&#128509;</h1>
+</header>
+<main>
+<div class="content">
+    <img src="howiyatay.png" alt="Dizi 1" style="max-width: 400px; float: left; margin-right: 2rem;">
+    <div class="info">
+        <h2>Oyuncular</h2>
+        <ul>
+            <li><a href="oyuncu1.html"> Josh Radnor</a></li>
+            <li><a href="oyuncu2.html"> Neil Patrick Harris</a></li>
+            <li><a href="oyuncu3.html"> Cobie Smulders</a></li>
+        </ul>
+        
+    <div>
+        <h2>Yönetmen</h2>
+        <p>Pamela Fryman</p>
+        <br>
+        <h2>Konusu</h2>
+        <p>
+            "New York'un karmaşık sokaklarında, beş arkadaşın yaşamları kesişir. Bir barda başlayan masalsı bir dostluk, kimi zaman gülümseten kimi zaman da acı veren sırlarla dolu bir labirente dönüşür. Her bir karakterin derinlikli geçmişleri ve gelecekleri, sevgi, dostluk, ihanet ve sadakat gibi karanlık ve aydınlık duygularla şekillenir. İşte bu dostluk ve aşk dolu labirentin merkezinde, bir adamın tüm detaylarıyla anlattığı bir hikaye var. Ancak bu hikaye, sıradan bir tanışma hikayesinden çok daha fazlasını barındırıyor. 'How I Met Your Mother', dostlukların ve aşkların karmaşık dokusunu suç filmlerini aratmayan bir atmosferde işlerken, her an sürprizlere gebe olan bir yolculuğa davet ediyor."</p>
+        <h2>IMDb Puanı</h2>
+        <p>IMDb puanı: 8.5</p>
+        <p id="average-rating">Ortalama Puan: 4.3/5</p>
+    </div> 
+    <div>
+        <h2>Sayfa Ziyaretçilerimizin Değerlendirmeleri</h2>
+        <p>Beğenenlerin Sayısı: <span id="like-count">5</span></p>
+<p>Beğenmeyenlerin Sayısı: <span id="dislike-count">2</span></p>
+    <button id="like-button" onclick="like()">Beğen</button>
+<button id="dislike-button" onclick="dislike()">Beğenme</button>
+
+</div>
+    </div>
+<div>
+    <h1>
+        
+
+        Daha fazla ayrıntıya aşağıdan ulaşabilirsiniz.
+ </h1>
+
+ <iframe src="https://www.imdb.com/title/tt0460649/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_how%2520i%2520met"></iframe>
+
+
+</div>
+</main>
+<footer>
+<p>© 2024 TV Shows and Movies</p>
+</footer>
+</body>
+</html>
